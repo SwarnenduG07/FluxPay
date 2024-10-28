@@ -19,6 +19,7 @@ function Gradient({
   );
 }
 
+
 const LINKS = [
   {
     title: "Docs",
