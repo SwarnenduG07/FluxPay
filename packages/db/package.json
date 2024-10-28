@@ -4,15 +4,19 @@
     ".": "./src/index.ts"
   },
   "version": "1.0.0",
-  "description": "",
+  "description": "The main db",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "db:migrate": "pnpm dlx prisma migrate dev && pnpm dlx prisma generate"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.11.24",
     "prisma": "5.21.1"
+  },
+  "dependencies": {
+    "@prisma/client": "5.21.1"
   }
 }

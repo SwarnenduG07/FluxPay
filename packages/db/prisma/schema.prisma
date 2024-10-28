@@ -23,3 +23,6 @@ model User {
   updatedAt   DateTime  @updatedAt
   
 }
+model marchent {
+  id          Int     @id @default(autoincrement())
+}
